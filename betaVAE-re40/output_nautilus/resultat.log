@@ -1,0 +1,652 @@
+##############################
+Start initialisation of paths
+['data/', 'models/', 'res/', 'figs/', 'logs/', 'models/checkpoints/', 'models/pretrained/']
+INIT:	data/	DONE
+INIT:	models/	DONE
+INIT:	res/	DONE
+INIT:	figs/	DONE
+INIT:	logs/	DONE
+INIT:	models/checkpoints/	DONE
+INIT:	models/pretrained/	DONE
+##############################
+INFO: Data exists in local!
+##############################
+##############################
+INIT betaVAE, device: cuda
+Case Name:
+ Re40_smallerCNN_beta0.005_wDecay0_dim2_lr0.0002OneCycleLR1e-05_bs256_epochs1000
+##############################
+INFO: the state dict has been loaded!
+INFO: Model has been loaded!
+INFO: Data Summary: N train: 801,N test: 200,N total 1001
+INFO: Dataloader generated, Num Test batch = 200
+INFO: test data has been loaded!
+INFO: Start spatial mode generating
+##############################
+Ordering modes
+(801, 2)
+[] 0 : Ek=0.3830, elapsed: 0.55s
+[] 1 : Ek=0.3811, elapsed: 0.49s
+Adding:  0 , Ek:  0.38302433
+##############################
+[0] 1 : Ek=0.9373, elapsed: 0.49s
+Adding:  1 , Ek:  0.93728554
+##############################
+Rank finished, the rank is [0 1]
+Cumulative Ek is [0.38302433 0.93728554]
+INFO: RANKING DONE
+INFO: Non-linear mode generated
+(200, 2)
+[0] 0.3692484
+[0 1] 0.95359516
+INFO: Test E_cum generated
+(200, 2, 88, 300)
+(200, 2, 88, 300)
+Start post-processing
+INFO: Latent Variable Train Generated
+INFO: Latent Variable Test Generated
+INFO: Spatial mode generated
+INFO: Post-processing results has been saved as dataset: res/modes_Re40_smallerCNN_beta0.005_wDecay0_dim2_lr0.0002OneCycleLR1e-05_bs256_epochs1000
+INFO: Successfuly DONE!
+INFO: Spatial Modes finished!
+INFO: Inference ended!
+##############################
+##############################
+INIT temporal predictor: easy, device: cuda
+Easy-Attention-based Transformer has been generated
+FileName: easyAttn_64in_64dmodel_1next_2dim_timeemb_4h_4nb_128ff_reluact_Noneoutact_100Epoch_135000N_TrueES_50P
+INFO: The model has been generated, num of parameter is 157955
+Case Name:
+ easyAttn_64in_64dmodel_1next_2dim_timeemb_4h_4nb_128ff_reluact_Noneoutact_100Epoch_135000N_TrueES_50P
+##############################
+INFO: Start Training 
+The training data has been generated, has shape of ((737, 64, 2), (737, 1, 2))
+INFO: DataLoader Generated!
+INFO: The model is assigned to device: cuda 
+INFO: The following schedulers are going to be used:
+<class 'torch.optim.lr_scheduler.ExponentialLR'>
+INFO: Training start
+INFO: Early-Stopper prepared
+INFO: Scheduler updated, LR = [0.00099] 
+At Epoch    = 0,
+Train_loss  = 0.03881179115601948
+Val_loss    = 0.005241832217654666
+
+INFO: Scheduler updated, LR = [0.0009801] 
+At Epoch    = 1,
+Train_loss  = 0.00939050453586012
+Val_loss    = 0.0017734979455535475
+
+INFO: Scheduler updated, LR = [0.000970299] 
+At Epoch    = 2,
+Train_loss  = 0.007702784483760466
+Val_loss    = 0.009654252110300836
+
+INFO: Scheduler updated, LR = [0.0009605960099999999] 
+At Epoch    = 3,
+Train_loss  = 0.0037938854888936273
+Val_loss    = 0.0013809492056434218
+
+INFO: Scheduler updated, LR = [0.0009509900498999999] 
+At Epoch    = 4,
+Train_loss  = 0.0030922198540115835
+Val_loss    = 0.004281571588000735
+
+INFO: Scheduler updated, LR = [0.0009414801494009999] 
+At Epoch    = 5,
+Train_loss  = 0.0027797850780189037
+Val_loss    = 0.0014179175769960558
+
+INFO: Scheduler updated, LR = [0.0009320653479069899] 
+At Epoch    = 6,
+Train_loss  = 0.0006062882955919839
+Val_loss    = 0.000615696598951881
+
+INFO: Scheduler updated, LR = [0.00092274469442792] 
+At Epoch    = 7,
+Train_loss  = 0.0011611430084552553
+Val_loss    = 0.0011917549009258684
+
+INFO: Scheduler updated, LR = [0.0009135172474836408] 
+At Epoch    = 8,
+Train_loss  = 0.0009754586191767287
+Val_loss    = 0.0005940478798505422
+
+INFO: Scheduler updated, LR = [0.0009043820750088043] 
+At Epoch    = 9,
+Train_loss  = 0.0003736167922500093
+Val_loss    = 0.0003422623802278493
+
+INFO: Scheduler updated, LR = [0.0008953382542587163] 
+At Epoch    = 10,
+Train_loss  = 0.00037352648218216784
+Val_loss    = 0.0005258585049493893
+
+INFO: Scheduler updated, LR = [0.0008863848717161291] 
+At Epoch    = 11,
+Train_loss  = 0.0004641648916904593
+Val_loss    = 0.0004951862769352423
+
+INFO: Scheduler updated, LR = [0.0008775210229989678] 
+At Epoch    = 12,
+Train_loss  = 0.0003056708696596647
+Val_loss    = 0.0002730566555181065
+
+INFO: Scheduler updated, LR = [0.0008687458127689781] 
+At Epoch    = 13,
+Train_loss  = 0.000214841155980631
+Val_loss    = 0.00017380817617113526
+
+INFO: Scheduler updated, LR = [0.0008600583546412883] 
+At Epoch    = 14,
+Train_loss  = 0.00016965433223565106
+Val_loss    = 0.00020198891493114265
+
+INFO: Scheduler updated, LR = [0.0008514577710948754] 
+At Epoch    = 15,
+Train_loss  = 0.00017450485719056413
+Val_loss    = 0.00017479598220135714
+
+INFO: Scheduler updated, LR = [0.0008429431933839266] 
+At Epoch    = 16,
+Train_loss  = 0.00012723057651393383
+Val_loss    = 0.0001240695474316945
+
+INFO: Scheduler updated, LR = [0.0008345137614500873] 
+At Epoch    = 17,
+Train_loss  = 0.00010306257385096827
+Val_loss    = 0.0001237081313455427
+
+INFO: Scheduler updated, LR = [0.0008261686238355864] 
+At Epoch    = 18,
+Train_loss  = 0.0001050889368501121
+Val_loss    = 0.00013608081467651032
+
+INFO: Scheduler updated, LR = [0.0008179069375972306] 
+At Epoch    = 19,
+Train_loss  = 7.391980544561157e-05
+Val_loss    = 0.00011496700195444596
+
+INFO: Scheduler updated, LR = [0.0008097278682212583] 
+At Epoch    = 20,
+Train_loss  = 8.749022211922832e-05
+Val_loss    = 8.785712054452381e-05
+
+INFO: Scheduler updated, LR = [0.0008016305895390457] 
+At Epoch    = 21,
+Train_loss  = 6.997651216491867e-05
+Val_loss    = 7.834701446463933e-05
+
+INFO: Scheduler updated, LR = [0.0007936142836436553] 
+At Epoch    = 22,
+Train_loss  = 7.549350151378416e-05
+Val_loss    = 7.216791571998918e-05
+
+INFO: Scheduler updated, LR = [0.0007856781408072188] 
+At Epoch    = 23,
+Train_loss  = 5.6136095775664254e-05
+Val_loss    = 6.197282188647502e-05
+
+INFO: Scheduler updated, LR = [0.0007778213593991466] 
+At Epoch    = 24,
+Train_loss  = 3.9900563516426285e-05
+Val_loss    = 5.7146393668812675e-05
+
+INFO: Scheduler updated, LR = [0.000770043145805155] 
+At Epoch    = 25,
+Train_loss  = 4.16880182739704e-05
+Val_loss    = 5.68500002594413e-05
+
+INFO: Scheduler updated, LR = [0.0007623427143471034] 
+At Epoch    = 26,
+Train_loss  = 4.162998150356791e-05
+Val_loss    = 5.275411594256356e-05
+
+INFO: Scheduler updated, LR = [0.0007547192872036325] 
+At Epoch    = 27,
+Train_loss  = 5.146293211486432e-05
+Val_loss    = 4.551376253869888e-05
+
+INFO: Scheduler updated, LR = [0.0007471720943315961] 
+At Epoch    = 28,
+Train_loss  = 2.961065680501948e-05
+Val_loss    = 4.027745170468414e-05
+
+INFO: Scheduler updated, LR = [0.0007397003733882801] 
+At Epoch    = 29,
+Train_loss  = 2.891819063474291e-05
+Val_loss    = 3.753805130317404e-05
+
+INFO: Scheduler updated, LR = [0.0007323033696543973] 
+At Epoch    = 30,
+Train_loss  = 2.2876131284938625e-05
+Val_loss    = 3.414852167102131e-05
+
+INFO: Scheduler updated, LR = [0.0007249803359578533] 
+At Epoch    = 31,
+Train_loss  = 3.071029206371369e-05
+Val_loss    = 3.196724149322993e-05
+
+INFO: Scheduler updated, LR = [0.0007177305325982747] 
+At Epoch    = 32,
+Train_loss  = 3.023106209581992e-05
+Val_loss    = 3.0426940931057607e-05
+
+INFO: Scheduler updated, LR = [0.000710553227272292] 
+At Epoch    = 33,
+Train_loss  = 1.9628944263672074e-05
+Val_loss    = 2.8536290031027148e-05
+
+INFO: Scheduler updated, LR = [0.000703447694999569] 
+At Epoch    = 34,
+Train_loss  = 2.3782355380768674e-05
+Val_loss    = 2.605064199431925e-05
+
+INFO: Scheduler updated, LR = [0.0006964132180495733] 
+At Epoch    = 35,
+Train_loss  = 2.0475350298448336e-05
+Val_loss    = 2.3779935971204492e-05
+
+INFO: Scheduler updated, LR = [0.0006894490858690775] 
+At Epoch    = 36,
+Train_loss  = 1.6628743989980985e-05
+Val_loss    = 2.2539326203735294e-05
+
+INFO: Scheduler updated, LR = [0.0006825545950103868] 
+At Epoch    = 37,
+Train_loss  = 1.8977695503471182e-05
+Val_loss    = 2.0944623503129225e-05
+
+INFO: Scheduler updated, LR = [0.000675729049060283] 
+At Epoch    = 38,
+Train_loss  = 3.258242253004977e-05
+Val_loss    = 2.0138980707506072e-05
+
+INFO: Scheduler updated, LR = [0.0006689717585696801] 
+At Epoch    = 39,
+Train_loss  = 1.3763134155816295e-05
+Val_loss    = 1.9183308452468465e-05
+
+INFO: Scheduler updated, LR = [0.0006622820409839833] 
+At Epoch    = 40,
+Train_loss  = 1.609046590932518e-05
+Val_loss    = 1.811496661724271e-05
+
+INFO: Scheduler updated, LR = [0.0006556592205741434] 
+At Epoch    = 41,
+Train_loss  = 1.3266800291587683e-05
+Val_loss    = 1.7036293708794825e-05
+
+INFO: Scheduler updated, LR = [0.0006491026283684019] 
+At Epoch    = 42,
+Train_loss  = 1.251144672234218e-05
+Val_loss    = 1.5988513336491746e-05
+
+INFO: Scheduler updated, LR = [0.0006426116020847179] 
+At Epoch    = 43,
+Train_loss  = 2.2604073215459573e-05
+Val_loss    = 1.558243309625903e-05
+
+INFO: Scheduler updated, LR = [0.0006361854860638707] 
+At Epoch    = 44,
+Train_loss  = 1.3178169672645515e-05
+Val_loss    = 1.4952426411312174e-05
+
+INFO: Scheduler updated, LR = [0.000629823631203232] 
+At Epoch    = 45,
+Train_loss  = 1.0391791347422823e-05
+Val_loss    = 1.4405433289908075e-05
+
+INFO: Scheduler updated, LR = [0.0006235253948911997] 
+At Epoch    = 46,
+Train_loss  = 1.4834049050249558e-05
+Val_loss    = 1.4031434909918824e-05
+
+INFO: Scheduler updated, LR = [0.0006172901409422877] 
+At Epoch    = 47,
+Train_loss  = 1.0594513592224197e-05
+Val_loss    = 1.3267767703714403e-05
+
+INFO: Scheduler updated, LR = [0.0006111172395328649] 
+At Epoch    = 48,
+Train_loss  = 2.0921858397060608e-05
+Val_loss    = 1.3200640112060953e-05
+
+INFO: Scheduler updated, LR = [0.0006050060671375363] 
+At Epoch    = 49,
+Train_loss  = 9.33660145692635e-06
+Val_loss    = 1.2428930809570326e-05
+
+INFO: Scheduler updated, LR = [0.0005989560064661609] 
+At Epoch    = 50,
+Train_loss  = 1.0431016115633619e-05
+Val_loss    = 1.209175113487888e-05
+
+INFO: Scheduler updated, LR = [0.0005929664464014993] 
+At Epoch    = 51,
+Train_loss  = 6.796872261853045e-06
+Val_loss    = 1.2059836031718029e-05
+
+INFO: Scheduler updated, LR = [0.0005870367819374844] 
+At Epoch    = 52,
+Train_loss  = 7.429332881302244e-06
+Val_loss    = 1.1486357638008289e-05
+
+INFO: Scheduler updated, LR = [0.0005811664141181095] 
+At Epoch    = 53,
+Train_loss  = 6.490172346310793e-06
+Val_loss    = 1.1269283965481697e-05
+
+INFO: Scheduler updated, LR = [0.0005753547499769285] 
+At Epoch    = 54,
+Train_loss  = 9.96093880633047e-06
+Val_loss    = 1.0948504692547627e-05
+
+INFO: Scheduler updated, LR = [0.0005696012024771592] 
+At Epoch    = 55,
+Train_loss  = 8.630476251111751e-06
+Val_loss    = 1.0654989416031418e-05
+
+INFO: Scheduler updated, LR = [0.0005639051904523875] 
+At Epoch    = 56,
+Train_loss  = 1.5154580563184976e-05
+Val_loss    = 1.092777489936231e-05
+
+INFO: Scheduler updated, LR = [0.0005582661385478637] 
+At Epoch    = 57,
+Train_loss  = 6.7601689476181166e-06
+Val_loss    = 1.0464771499706282e-05
+
+INFO: Scheduler updated, LR = [0.000552683477162385] 
+At Epoch    = 58,
+Train_loss  = 1.3975761764504173e-05
+Val_loss    = 1.0263288827814364e-05
+
+INFO: Scheduler updated, LR = [0.0005471566423907612] 
+At Epoch    = 59,
+Train_loss  = 1.3763778358591114e-05
+Val_loss    = 1.002675885133244e-05
+
+INFO: Scheduler updated, LR = [0.0005416850759668536] 
+At Epoch    = 60,
+Train_loss  = 7.89604949153475e-06
+Val_loss    = 9.82432991165567e-06
+
+INFO: Scheduler updated, LR = [0.000536268225207185] 
+At Epoch    = 61,
+Train_loss  = 6.756257608563648e-06
+Val_loss    = 9.752895739684636e-06
+
+INFO: Scheduler updated, LR = [0.0005309055429551132] 
+At Epoch    = 62,
+Train_loss  = 5.4673986984568655e-06
+Val_loss    = 9.496883501776972e-06
+
+INFO: Scheduler updated, LR = [0.000525596487525562] 
+At Epoch    = 63,
+Train_loss  = 1.1157417624874292e-05
+Val_loss    = 9.42667169068512e-06
+
+INFO: Scheduler updated, LR = [0.0005203405226503064] 
+At Epoch    = 64,
+Train_loss  = 8.4938326253275e-06
+Val_loss    = 9.21214185025845e-06
+
+INFO: Scheduler updated, LR = [0.0005151371174238034] 
+At Epoch    = 65,
+Train_loss  = 5.939001541414202e-06
+Val_loss    = 9.049232765981878e-06
+
+INFO: Scheduler updated, LR = [0.0005099857462495653] 
+At Epoch    = 66,
+Train_loss  = 5.4357911491709496e-06
+Val_loss    = 9.04564355575555e-06
+
+INFO: Scheduler updated, LR = [0.0005048858887870696] 
+At Epoch    = 67,
+Train_loss  = 1.0644203467126755e-05
+Val_loss    = 8.838543844585484e-06
+
+INFO: Scheduler updated, LR = [0.0004998370298991989] 
+At Epoch    = 68,
+Train_loss  = 8.951286493659913e-06
+Val_loss    = 8.772202056354365e-06
+
+INFO: Scheduler updated, LR = [0.000494838659600207] 
+At Epoch    = 69,
+Train_loss  = 5.2693730931541604e-06
+Val_loss    = 8.689606958698179e-06
+
+INFO: Scheduler updated, LR = [0.0004898902730042048] 
+At Epoch    = 70,
+Train_loss  = 4.1908462891189855e-06
+Val_loss    = 8.550594478996621e-06
+
+INFO: Scheduler updated, LR = [0.0004849913702741628] 
+At Epoch    = 71,
+Train_loss  = 4.135872805145246e-06
+Val_loss    = 8.488921102488766e-06
+
+INFO: Scheduler updated, LR = [0.00048014145657142114] 
+At Epoch    = 72,
+Train_loss  = 4.627075239239756e-06
+Val_loss    = 8.250691304990167e-06
+
+INFO: Scheduler updated, LR = [0.00047534004200570695] 
+At Epoch    = 73,
+Train_loss  = 5.154798633881489e-06
+Val_loss    = 8.139998425503035e-06
+
+INFO: Scheduler updated, LR = [0.0004705866415856499] 
+At Epoch    = 74,
+Train_loss  = 5.838457833282541e-06
+Val_loss    = 8.146376097323122e-06
+
+INFO: Scheduler updated, LR = [0.0004658807751697934] 
+At Epoch    = 75,
+Train_loss  = 5.6615504685656304e-06
+Val_loss    = 8.030249454030717e-06
+
+INFO: Scheduler updated, LR = [0.00046122196741809544] 
+At Epoch    = 76,
+Train_loss  = 5.25094471366221e-06
+Val_loss    = 7.885839393664454e-06
+
+INFO: Scheduler updated, LR = [0.0004566097477439145] 
+At Epoch    = 77,
+Train_loss  = 5.379196542074984e-06
+Val_loss    = 7.786157987760128e-06
+
+INFO: Scheduler updated, LR = [0.00045204365026647533] 
+At Epoch    = 78,
+Train_loss  = 5.131588347793975e-06
+Val_loss    = 7.735042222397956e-06
+
+INFO: Scheduler updated, LR = [0.0004475232137638106] 
+At Epoch    = 79,
+Train_loss  = 3.7797451991871606e-06
+Val_loss    = 7.996732853604732e-06
+
+INFO: Scheduler updated, LR = [0.0004430479816261725] 
+At Epoch    = 80,
+Train_loss  = 5.247538178617783e-06
+Val_loss    = 7.606679384873526e-06
+
+INFO: Scheduler updated, LR = [0.00043861750180991077] 
+At Epoch    = 81,
+Train_loss  = 4.0880344980614294e-06
+Val_loss    = 7.52099377505884e-06
+
+INFO: Scheduler updated, LR = [0.00043423132679181164] 
+At Epoch    = 82,
+Train_loss  = 5.39832767355533e-06
+Val_loss    = 7.382133893819677e-06
+
+INFO: Scheduler updated, LR = [0.0004298890135238935] 
+At Epoch    = 83,
+Train_loss  = 4.0232243790621725e-06
+Val_loss    = 7.288668122192895e-06
+
+INFO: Scheduler updated, LR = [0.0004255901233886546] 
+At Epoch    = 84,
+Train_loss  = 3.5707802969318043e-06
+Val_loss    = 7.285535920763741e-06
+
+INFO: Scheduler updated, LR = [0.00042133422215476804] 
+At Epoch    = 85,
+Train_loss  = 3.92524593518742e-06
+Val_loss    = 7.14580764415095e-06
+
+INFO: Scheduler updated, LR = [0.00041712087993322035] 
+At Epoch    = 86,
+Train_loss  = 6.695753252060337e-06
+Val_loss    = 7.078678479317475e-06
+
+INFO: Scheduler updated, LR = [0.0004129496711338881] 
+At Epoch    = 87,
+Train_loss  = 5.004465689535406e-06
+Val_loss    = 7.014182817845328e-06
+
+INFO: Scheduler updated, LR = [0.0004088201744225492] 
+At Epoch    = 88,
+Train_loss  = 4.4018963654664166e-06
+Val_loss    = 6.979096183754705e-06
+
+INFO: Scheduler updated, LR = [0.0004047319726783237] 
+At Epoch    = 89,
+Train_loss  = 3.6364533137938933e-06
+Val_loss    = 6.9579502844528575e-06
+
+INFO: Scheduler updated, LR = [0.00040068465295154044] 
+At Epoch    = 90,
+Train_loss  = 3.717341513597347e-06
+Val_loss    = 6.835969051698575e-06
+
+INFO: Scheduler updated, LR = [0.00039667780642202503] 
+At Epoch    = 91,
+Train_loss  = 3.8797457647604745e-06
+Val_loss    = 6.773549201269005e-06
+
+INFO: Scheduler updated, LR = [0.0003927110283578048] 
+At Epoch    = 92,
+Train_loss  = 4.4611254558624854e-06
+Val_loss    = 6.727813711591266e-06
+
+INFO: Scheduler updated, LR = [0.00038878391807422674] 
+At Epoch    = 93,
+Train_loss  = 3.8091426256562354e-06
+Val_loss    = 6.688166428609071e-06
+
+INFO: Scheduler updated, LR = [0.0003848960788934845] 
+At Epoch    = 94,
+Train_loss  = 3.3884328890707016e-06
+Val_loss    = 6.655901292892727e-06
+
+INFO: Scheduler updated, LR = [0.00038104711810454966] 
+At Epoch    = 95,
+Train_loss  = 4.8547060378907535e-06
+Val_loss    = 6.596866139286273e-06
+
+INFO: Scheduler updated, LR = [0.00037723664692350416] 
+At Epoch    = 96,
+Train_loss  = 4.14408348019035e-06
+Val_loss    = 6.558640224456384e-06
+
+INFO: Scheduler updated, LR = [0.00037346428045426913] 
+At Epoch    = 97,
+Train_loss  = 3.080503557667367e-06
+Val_loss    = 6.523458412974267e-06
+
+INFO: Scheduler updated, LR = [0.00036972963764972643] 
+At Epoch    = 98,
+Train_loss  = 2.7564424744451134e-06
+Val_loss    = 6.529783776558533e-06
+
+INFO: Scheduler updated, LR = [0.00036603234127322915] 
+At Epoch    = 99,
+Train_loss  = 3.74759114693715e-06
+Val_loss    = 6.495883320206525e-06
+
+INFO: Training FINISH, Cost Time: 4.15s
+INFO: The checkpoints has been saved!
+INFO: Training finished, cleaned the data loader
+##############################
+##############################
+INFO: Start post-processing
+INFO: the state dict has been loaded!
+<bound method Module.eval of easyTransformerEncoder(
+  (embed): TimeSpaceEmbedding(
+    (spac_proj): Linear(in_features=2, out_features=64, bias=True)
+    (time_proj): Conv1d(64, 64, kernel_size=(1,), stride=(1,))
+    (time_avgpool): AvgPool1d(kernel_size=(2,), stride=(2,), padding=(0,))
+    (time_maxpool): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (time_compress): Linear(in_features=64, out_features=64, bias=True)
+    (act): Identity()
+  )
+  (encoders): ModuleList(
+    (0-3): 4 x easyEncoderLayer(
+      (attn): DenseEasyAttn()
+      (feed_forward): PositionWiseFeedForward(
+        (fc1): Linear(in_features=64, out_features=128, bias=True)
+        (fc2): Linear(in_features=128, out_features=64, bias=True)
+        (act): ReLU()
+      )
+      (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=1e-05, inplace=False)
+    )
+  )
+  (cf): Conv1d(64, 1, kernel_size=(1,), stride=(1,))
+  (of): Linear(in_features=64, out_features=2, bias=True)
+)>
+INFO: Test data loaded, SIZE = (200, 2)
+The sequence length = 200
+Begin to compute the sliding window error
+131
+(5,)
+INFO: Inference ended!
+##############################
+##############################
+INFO: Start post-processing
+INFO: the state dict has been loaded!
+<bound method Module.eval of easyTransformerEncoder(
+  (embed): TimeSpaceEmbedding(
+    (spac_proj): Linear(in_features=2, out_features=64, bias=True)
+    (time_proj): Conv1d(64, 64, kernel_size=(1,), stride=(1,))
+    (time_avgpool): AvgPool1d(kernel_size=(2,), stride=(2,), padding=(0,))
+    (time_maxpool): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (time_compress): Linear(in_features=64, out_features=64, bias=True)
+    (act): Identity()
+  )
+  (encoders): ModuleList(
+    (0-3): 4 x easyEncoderLayer(
+      (attn): DenseEasyAttn()
+      (feed_forward): PositionWiseFeedForward(
+        (fc1): Linear(in_features=64, out_features=128, bias=True)
+        (fc2): Linear(in_features=128, out_features=64, bias=True)
+        (act): ReLU()
+      )
+      (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=1e-05, inplace=False)
+    )
+  )
+  (cf): Conv1d(64, 1, kernel_size=(1,), stride=(1,))
+  (of): Linear(in_features=64, out_features=2, bias=True)
+)>
+INFO: Test data loaded, SIZE = (200, 2)
+The sequence length = 200
+Begin to compute the sliding window error
+131
+(5,)
+INFO: Inference ended!
+##############################
+shape de norm_err (200, 88, 300)
+norme erreur 0.006133083
+erreur relative 2.60676e-06
+shape de norm_err (200, 88, 300)
+norme erreur 1608.7256
+erreur relative 0.6837608
+shape de norm_err (200, 88, 300)
+norme erreur 1608.7256
+erreur relative 0.6837608
