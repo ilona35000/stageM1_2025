@@ -15,8 +15,7 @@ Le script permettant d'exécuter le code via le calculateur Nautilus se trouve d
 
 Il y aura une incompatibilité entre les chemins du code et les chemins dans votre disque mais ça se modifie facilement.
 
-
-
+Les animations ont été créées à l'aide de cette commande en se plaçant dans le fichier des images: ffmpeg -framerate 20 -i frame_%04d.png -c:v libx264 -pix_fmt yuv420p titre.mp4 (à adapter selon le titre des images)
 
 
 English:
@@ -38,3 +37,5 @@ main.py: some parameters can be changed via the job.sh file. A detailed list of 
 The script for running the code on the Nautilus cluster is provided in the file job.sh. From a terminal, direct python commands are sufficient.
 
 There may be incompatibilities between the paths defined in the code and those on your local machine, but they can be easily updated.
+
+The animations were created using this command by placing them in the image file: ffmpeg -framerate 20 -i frame_%04d.png -c:v libx264 -pix_fmt yuv420p titre.mp4 (to be adapted according to the title of the images)
